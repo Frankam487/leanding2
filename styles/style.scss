@@ -214,12 +214,27 @@ header {
       flex-wrap: wrap;
       // background: red;
       box-shadow: 10px 10px 10px black;
+      h2, h3, p{
+        margin: 10px 0;
+      }
+      p{
+        color: rgba(255, 123, 0, 0.87);
+      }
+      h2 {
+        background: rgba(255, 123, 0, 0.87);
+        width: 17%;
+        border-radius: 4px;
+        padding: 7px 12px;
+        text-align: center;
+      }
       button {
         background: rgba(255, 123, 0, 0.87);
-        padding: 10px 20px;
+        padding: 10px 60px;
         color: #fff;
         border-radius: 3px;
         border: none;
+        font-size: 1.4rem;
+        cursor: pointer;
       }
       img{
         border-radius: 4px;

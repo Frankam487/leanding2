@@ -183,12 +183,27 @@ header span {
   flex-wrap: wrap;
   box-shadow: 10px 10px 10px black;
 }
+.prestations .card-container .card h2, .prestations .card-container .card h3, .prestations .card-container .card p {
+  margin: 10px 0;
+}
+.prestations .card-container .card p {
+  color: rgba(255, 123, 0, 0.87);
+}
+.prestations .card-container .card h2 {
+  background: rgba(255, 123, 0, 0.87);
+  width: 17%;
+  border-radius: 4px;
+  padding: 7px 12px;
+  text-align: center;
+}
 .prestations .card-container .card button {
   background: rgba(255, 123, 0, 0.87);
-  padding: 10px 20px;
+  padding: 10px 60px;
   color: #fff;
   border-radius: 3px;
   border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 .prestations .card-container .card img {
   border-radius: 4px;
