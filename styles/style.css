@@ -1,3 +1,195 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 70% 10%;
+  padding: 7px 30px;
+  font-weight: 900;
+  align-items: center;
+  font-size: 1.2rem;
+}
+header .homee {
+  background: rgb(255, 123, 0);
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+}
+header .home {
+  color: rgb(255, 123, 0);
+  position: relative;
+}
+header .home::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  background: rgb(255, 123, 0);
+  height: 2px;
+  transform: translateX(-90%);
+  width: 140%;
+  bottom: 0;
+}
+header .home::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  background: rgb(255, 123, 0);
+  height: 2px;
+  transform: translateX(-20%);
+  width: 140%;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin: 0 12px;
+}
+header span {
+  text-align: center;
+}
+
+.corps {
+  background: url(../images/bg-home.jpg) center/cover;
+  height: 100vh;
+}
+.corps .text {
+  padding: 100px 52px;
+}
+.corps h1 {
+  color: rgba(255, 123, 0, 0.726);
+  font-weight: 900;
+  font-size: 4.2rem;
+}
+.corps h2 {
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.corps p {
+  margin: 40px 0;
+  color: #fff;
+  width: 40%;
+}
+.corps .logo {
+  display: flex;
+}
+.corps .logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 50px;
+  width: 70%;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  margin: -100px 20px;
+}
+.calendar input {
+  padding: 7px;
+  border-radius: 3px;
+}
+.calendar .embarquement {
+  margin: 0 100px;
+}
+.calendar button {
+  background: rgba(255, 123, 0, 0.87);
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.location {
+  margin: 200px 0;
+}
+.location .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.location .text h1 {
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+.location .text h3 {
+  font-size: 1.9rem;
+  color: rgba(255, 123, 0, 0.87);
+}
+.location .content {
+  margin: 60px 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 22px;
+}
+.location .content .un, .location .content .deux, .location .content .trois {
+  margin: 10px;
+}
+.location .content .un {
+  position: relative;
+  padding: 12px;
+  border: 100px;
+}
+.location .content .un::after {
+  content: "";
+  width: 100px;
+  height: 10px;
+  position: absolute;
+}
+.location .content .un::before {
+  padding: 10px;
+  content: "";
+  width: 200px;
+  height: 10px;
+  position: absolute;
+  border-top: 2px solid red;
+}
+.location .content h3, .location .content p {
+  text-align: center;
+  margin: 12px 0;
+}
+.location .content p {
+  width: 90%;
+}
+.location .content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.prestations .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.prestations .card-container {
+  padding: 12px 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.prestations .card-container .card {
+  padding: 12px 24px;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 10px black;
+}
+.prestations .card-container .card button {
+  background: rgba(255, 123, 0, 0.87);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+}
+.prestations .card-container .card img {
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
