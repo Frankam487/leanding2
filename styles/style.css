@@ -153,7 +153,6 @@ header span {
   width: 200px;
   height: 10px;
   position: absolute;
-  border-top: 2px solid red;
 }
 .location .content h3, .location .content p {
   text-align: center;
@@ -174,14 +173,16 @@ header span {
   flex-direction: column;
 }
 .prestations .card-container {
-  padding: 12px 24px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 .prestations .card-container .card {
+  margin: 10px;
   padding: 12px 24px;
   flex-wrap: wrap;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: -1px 10px 10px black;
 }
 .prestations .card-container .card h2, .prestations .card-container .card h3, .prestations .card-container .card p {
   margin: 10px 0;
@@ -190,6 +191,10 @@ header span {
   color: rgba(255, 123, 0, 0.87);
 }
 .prestations .card-container .card h2 {
+  color: #fff;
+}
+.prestations .card-container .card h2 {
+  color: #fff;
   background: rgba(255, 123, 0, 0.87);
   width: 17%;
   border-radius: 4px;
@@ -197,6 +202,8 @@ header span {
   text-align: center;
 }
 .prestations .card-container .card button {
+  display: block;
+  margin: 0 auto;
   background: rgba(255, 123, 0, 0.87);
   padding: 10px 60px;
   color: #fff;
@@ -207,4 +214,60 @@ header span {
 }
 .prestations .card-container .card img {
   border-radius: 4px;
+}
+
+.histoire {
+  margin: 60px 0;
+}
+.histoire .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.histoire .histoire-content {
+  display: grid;
+  margin: 60px 100px;
+  grid-template-columns: 50% 50%;
+}
+.histoire .histoire-content .image img {
+  margin-top: -42px;
+  height: 100%;
+  width: 100%;
+}
+.histoire .apropos {
+  margin: 0 12px;
+}
+.histoire .apropos h2 {
+  color: rgba(255, 123, 0, 0.87);
+}
+.histoire .apropos p {
+  margin: 20px 0;
+}
+.histoire button {
+  color: #fff;
+  font-weight: 900;
+  padding: 12px;
+  display: block;
+  width: 100%;
+  background: rgba(255, 123, 0, 0.87);
+  border-radius: 6px;
+  border: none;
+  margin: 0 auto;
+}
+
+.avis .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.avis .text h2 {
+  color: rgba(255, 123, 0, 0.87);
+}
+.avis .text h1 {
+  font-size: 2rem;
+}
+.avis .card .stars {
+  color: rgba(255, 123, 0, 0.87);
 }/*# sourceMappingURL=style.css.map */
