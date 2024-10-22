@@ -258,16 +258,51 @@ header span {
 
 .avis .text {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.avis .text h2 {
+.avis .card-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.avis .card-content .card {
+  margin: 30px 0;
+  width: 30%;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -1px 10px 10px black;
+  margin: 10px;
+}
+.avis .card-content .card .stars {
   color: rgba(255, 123, 0, 0.87);
 }
-.avis .text h1 {
-  font-size: 2rem;
+.avis .card-content .card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
-.avis .card .stars {
-  color: rgba(255, 123, 0, 0.87);
+.avis .card-content .card p {
+  text-align: center;
+}
+
+.inscription {
+  background-color: rgba(255, 123, 0, 0.87);
+}
+.inscription h2 {
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+}
+.inscription .btn {
+  display: flex;
+  transform: translateX(50% -50%);
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
